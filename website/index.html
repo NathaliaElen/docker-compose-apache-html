@@ -9,7 +9,10 @@
 </head>
 
 <body>
-    <h1>🚀 Meu primeiro site com Docker!</h1>
+    <h1>🐳 Docker Compose: Aplicação Web Estática (Apache, HTML, CSS, JS)</h1>
+    <p><b>Desafio de Projeto:</b> Criando um Container de uma Aplicação WEB. Este projeto demonstra a execução de uma
+        aplicação HTML estática, com estilização CSS e interatividade JavaScript, utilizando um servidor Apache (HTTPD)
+        e gerenciamento de contêineres com Docker Compose.</p>
 
     <h2>📦 O que é Docker?</h2>
     <p>Docker é uma plataforma que permite criar, empacotar e executar aplicações em ambientes isolados chamados
@@ -26,27 +29,52 @@
     <p>O Apache HTTP Server (ou apenas Apache) é um dos servidores web mais utilizados no mundo. Ele é responsável por
         entregar arquivos HTML, imagens e outros conteúdos via protocolo HTTP para os navegadores.</p>
 
-    <h2>📁 Estrutura do Projeto</h2>
-    <p>Este projeto possui 4 arquivos principais:</p>
+    <h2>🎯 Objetivo do Desafio</h2>
+    <p>O principal objetivo deste desafio foi construir um ambiente containerizado capaz de servir uma aplicação web
+        estática. Isso incluiu:</p>
     <ul>
-        <li><code>index.html</code>: a página que você está vendo agora.</li>
-        <li><code>style.css</code>: o arquivo que define a estilização da página.</li>
-        <li><code>script.js</code>: o arquivo que dar a interatividade a página.</li>
-        <li><code>docker-compose.yml</code>: define o container do Apache e aponta o diretório onde o HTML será servido.
+        <li>A criação de um servidor Apache (HTTPD) dentro de um contêiner Docker.</li>
+        <li>O empacotamento de arquivos HTML, CSS e JavaScript para serem servidos por este Apache.</li>
+        <li>A orquestração do contêiner Apache usando Docker Compose para facilitar a definição e execução do ambiente.
         </li>
+        <li>O entendimento do ciclo de vida de uma aplicação em um ambiente isolado e portátil.</li>
     </ul>
 
-    <h2>🚀 Como executar este projeto?</h2>
-    <p>Com Docker e Docker Compose instalados, basta abrir o terminal e executar os comandos:</p>
-    <pre><code>docker-compose up -d</code></pre>
-    <p>Depois, acesse <a href="http://localhost:8081" target="_blank">http://localhost:8081</a> no navegador para
-        visualizar este site rodando dentro de um container Apache!</p>
+    <h2>✨ Tecnologias Utilizadas</h2>
+    <ul>
+        <li><strong>Docker:</strong> Plataforma para desenvolver, empacotar e executar aplicações em contêineres.</li>
+        <li><strong>Docker Compose:</strong> Ferramenta para definir e executar aplicações Docker multi-contêiner.</li>
+        <li><strong>Apache HTTP Server (httpd):</strong> Servidor web responsável por servir os arquivos estáticos da
+            aplicação.</li>
+        <li><strong>HTML5:</strong> Linguagem de marcação para a estrutura da página web (index.html).</li>
+        <li><strong>CSS3:</strong> Linguagem de estilização para a aparência da página web (style.css).</li>
+        <li><strong>JavaScript (ES6+):</strong> Linguagem de programação para adicionar interatividade à página web
+            (script.js).</li>
+    </ul>
 
-    <h2>✅ Objetivo do Desafio</h2>
-    <p>O objetivo foi criar um container executando um servidor Apache que serve uma aplicação web HTML simples,
-        utilizando Docker Compose.</p>
-    <p>Esse é um passo essencial para entender como funciona o empacotamento e deploy de aplicações em ambientes
-        isolados.</p>
+    <h2>📁 Estrutura do Projeto</h2>
+    <p>A organização dos arquivos no projeto é a seguinte:</p>
+    <pre><code>
+        .
+        ├── website/
+        │   ├── index.html
+        │   ├── style.css
+        │   └── script.js
+        └── docker-compose.yml
+        </code></pre>
+    <ul>
+        <li><strong>website/:</strong> Este diretório contém todos os arquivos estáticos da aplicação web (HTML, CSS,
+            JavaScript) que serão servidos pelo Apache.
+            <ul>
+                <li>index.html: A página principal da aplicação, contendo a estrutura e o conteúdo.</li>
+                <li>style.css: Folha de estilo responsável pela aparência visual da aplicação.</li>
+                <li>script.js: Script JavaScript para adicionar interatividade à página.</li>
+            </ul>
+        </li>
+        <li><strong>docker-compose.yml:</strong> O arquivo de configuração principal do Docker Compose, que define o
+            serviço do servidor Apache, o mapeamento de portas e a montagem do volume para os arquivos da aplicação.
+        </li>
+    </ul>
 
     <footer>
         <p>Feito com ❤️ por <a href="https://github.com/NathaliaElen" target="_blank">Nathália Elen</a></p>
