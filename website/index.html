@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Docker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>🚀 Meu primeiro site com Docker!</h1>
+
+    <h2>📦 O que é Docker?</h2>
+    <p>Docker é uma plataforma que permite criar, empacotar e executar aplicações em ambientes isolados chamados
+        <strong>containers</strong>. Esses containers
+        contêm tudo o que a aplicação precisa para rodar: código, dependências, sistema operacional e configurações.
+    </p>
+
+    <h2>🛠️ O que é Docker Compose?</h2>
+    <p>Docker Compose é uma ferramenta que permite definir e gerenciar múltiplos containers usando um único arquivo de
+        configuração chamado <code>docker-compose.yml</code>. Com ele, você pode iniciar toda uma aplicação com apenas
+        um comando: <code>docker-compose up</code>.</p>
+
+    <h2>🌐 O que é o Apache (HTTPD)?</h2>
+    <p>O Apache HTTP Server (ou apenas Apache) é um dos servidores web mais utilizados no mundo. Ele é responsável por
+        entregar arquivos HTML, imagens e outros conteúdos via protocolo HTTP para os navegadores.</p>
+
+    <h2>📁 Estrutura do Projeto</h2>
+    <p>Este projeto possui 4 arquivos principais:</p>
+    <ul>
+        <li><code>index.html</code>: a página que você está vendo agora.</li>
+        <li><code>style.css</code>: o arquivo que define a estilização da página.</li>
+        <li><code>script.js</code>: o arquivo que dar a interatividade a página.</li>
+        <li><code>docker-compose.yml</code>: define o container do Apache e aponta o diretório onde o HTML será servido.
+        </li>
+    </ul>
+
+    <h2>🚀 Como executar este projeto?</h2>
+    <p>Com Docker e Docker Compose instalados, basta abrir o terminal e executar os comandos:</p>
+    <pre><code>docker-compose up -d</code></pre>
+    <p>Depois, acesse <a href="http://localhost:8081" target="_blank">http://localhost:8081</a> no navegador para
+        visualizar este site rodando dentro de um container Apache!</p>
+
+    <h2>✅ Objetivo do Desafio</h2>
+    <p>O objetivo foi criar um container executando um servidor Apache que serve uma aplicação web HTML simples,
+        utilizando Docker Compose.</p>
+    <p>Esse é um passo essencial para entender como funciona o empacotamento e deploy de aplicações em ambientes
+        isolados.</p>
+
+    <footer>
+        <p>Feito com ❤️ por <a href="https://github.com/NathaliaElen" target="_blank">Nathália Elen</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
